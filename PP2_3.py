@@ -1,13 +1,19 @@
 
+'''
+Lesson: Else If
+Author: Alex Liang
+Date Issued: October 16th, 2024
+Date Last Modified: October 16th, 2024
+'''
 
 def q1(): 
   #Write Assignment code here
 
-  word = str(input())
-  if word[-1:] == 'y':
-    print('-ies')
-  elif word[-2:] == 'ey':
+  word = str(input('In: '))
+  if word[-2:] == 'ey':
     print('-eys')
+  elif word[-1:] == 'y':
+    print('-ies')
   elif word[-3:] == 'ife':
     print('-ives')
   else:
@@ -16,7 +22,7 @@ def q1():
 def q2(): 
   #Write Assignment code here
 
-  n = int(input())
+  n = int(input('In: '))
   if n > 0:
     print(f'{n} is positive')
   elif n < 0:
@@ -34,7 +40,7 @@ def q3():
   elif side1 == side2 and side2 == side3:
     print('Equilateral')
   elif side1 == side2 or side3 == side2 or side3 == side1:
-    print('Isoceles')
+    print('Isosceles')
   else:
     print('Scalene')
 
